@@ -3,7 +3,14 @@
     <wm-top-nav name="topnav" content="topnav"></wm-top-nav>
     <wm-content name="content">
         <wm-left-panel columnwidth="2" name="leftpanel" content="leftnav"></wm-left-panel>
-        <wm-page-content columnwidth="8" paddingleft="15" paddingright="15" name="mainContent">
+        <wm-page-content columnwidth="8" name="mainContent" padding="unset 15px">
+            <wm-grid title="" dataset="bind:Variables.MyJavaServiceSampleJavaOperation.dataSet" navigation="Basic" name="grid1">
+                <wm-grid-column binding="column1" caption="Column1" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                <wm-grid-column binding="column2" caption="Column2" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                <wm-grid-column binding="column3" caption="Column3" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                <wm-grid-column binding="column4" caption="Column4" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                <wm-grid-column binding="column5" caption="Column5" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+            </wm-grid>
         </wm-page-content>
         <wm-right-panel columnwidth="2" name="rightpanel" content="rightnav"></wm-right-panel>
     </wm-content>
